@@ -1,0 +1,19 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/navigation_cadastrar">
+
+    <fragment
+        android:id="@+id/navigation_cadastrar"
+        android:name="com.example.renatocouto_atividade_09_provider.ui.cadastrar.CadastrarFragment"
+        android:label="@string/title_cadastrar"
+        tools:layout="@layout/fragment_cadastrar" />
+
+    <fragment
+        android:id="@+id/navigation_listar"
+        android:name="com.example.renatocouto_atividade_09_provider.ui.listar.ListarFragment"
+        android:label="@string/title_listar"
+        tools:layout="@layout/fragment_listar" />
+
+</navigation>

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">RenatoCouto_atividade_09_provider</string>
+    <string name="title_cadastrar">Cadastrar</string>
+    <string name="title_listar">Listar</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_sair">Sair</string>
+    <string name="nome_aluno">Nome Aluno</string>
+    <string name="salvar">Salvar</string>
+    <string name="limpar">Limpar</string>
+</resources>
