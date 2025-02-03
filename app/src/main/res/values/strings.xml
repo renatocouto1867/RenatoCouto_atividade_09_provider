@@ -2,9 +2,31 @@
     <string name="app_name">RenatoCouto_atividade_09_provider</string>
     <string name="title_cadastrar">Cadastrar</string>
     <string name="title_listar">Listar</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_aprovados">Aprovados</string>
     <string name="title_sair">Sair</string>
     <string name="nome_aluno">Nome Aluno</string>
     <string name="salvar">Salvar</string>
     <string name="limpar">Limpar</string>
+    <string name="por_favor_os_campos">Por favor preencha todos os campos</string>
+    <string name="insira_uma_nota_valida">insira uma nota entre 0 e 10</string>
+    <string name="aluno_salvo_com_sucesso">Aluno salvo com sucesso</string>
+    <string name="houve_um_erro_ao_salvar">houve um erro ao salvar</string>
+    <string name="carregando">Carregando...</string>
+    <string name="confirmar_exclusao">confirmar exclusao</string>
+    <string name="realmente_deseja_deletar">realmente deseja deletar: </string>
+    <string name="deletar">Deletar</string>
+    <string name="cancelar">Cancelar</string>
+    <string name="alunos">Alunos</string>
+    <string name="notas">Notas</string>
+    <string name="acoes">Acões</string>
+    <string name="editar_cadastro">editar cadastro</string>
+    <string name="excluir_aluno">excluir aluno</string>
+    <string name="aluno_removido">Aluno removido</string>
+    <string name="erro_ao_excluir">erro ao excluir</string>
+    <string name="status">Status</string>
+    <string name="m_dia">Média</string>
+    <string name="sem_alunos">sem aluno cadastrado</string>
+    <string name="nota1">Nota1</string>
+    <string name="nota2">Nota2</string>
+
 </resources>

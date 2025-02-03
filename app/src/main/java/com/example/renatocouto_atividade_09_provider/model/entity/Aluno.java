@@ -15,6 +15,20 @@ public class Aluno implements Serializable {
     private double nota2;
     private  String situacao;
 
+    public void setSituacao(String situacao) {
+        this.situacao = situacao;
+    }
+
+    public void setNota1(double nota1) {
+        this.nota1 = nota1;
+    }
+
+    public void setNota2(double nota2) {
+        this.nota2 = nota2;
+    }
+
+    public Aluno(){};
+
 
     public Aluno(Long id, String nome, double nota1, double nota2) {
         this.id = id;
@@ -37,7 +51,14 @@ public class Aluno implements Serializable {
         this.situacao = calcularSituacao(nota1, nota2);
     }
 
+    public void atualizarNomeNota(String  nome, double nota1, double nota2){
+        this.nome = nome;
+        atualizaNotas(nota1, nota2);
+    }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
 
     private String calcularSituacao(double nota1, double nota2) {
         return (getMedia() >= 6.0) ? "Aprovado" : "Reprovado";

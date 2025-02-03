@@ -8,14 +8,18 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        >
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:orientation="vertical">
 
+            <!-- Campo Nome -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/input_layout_nome"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
@@ -23,49 +27,54 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="40dp"
                 android:layout_marginBottom="16dp"
-                android:hint="@string/nome_aluno">
+                android:hint="@string/nome_aluno"
+                app:hintTextColor="@color/dark_hint">  <!-- Cor de hint mais escura -->
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_nome"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="text" />
-
+                    android:inputType="text"
+                    android:textColor="@color/dark_text" />  <!-- Cor do texto definida -->
             </com.google.android.material.textfield.TextInputLayout>
 
+            <!-- Campo Nota 1 -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/input_layout_nota1"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
-                android:hint="Nota1">
+                android:hint="@string/nota1"
+                app:hintTextColor="@color/dark_hint">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_nota1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="numberDecimal" />
-
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/dark_text" />
             </com.google.android.material.textfield.TextInputLayout>
 
+            <!-- Campo Nota 2 -->
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/input_layout_nota2"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="24dp"
-                android:hint="Nota2">
+                android:hint="@string/nota2"
+                app:hintTextColor="@color/dark_hint">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edit_nota2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:inputType="numberDecimal" />
-
+                    android:inputType="numberDecimal"
+                    android:textColor="@color/dark_text" />
             </com.google.android.material.textfield.TextInputLayout>
 
-
+            <!-- Botões -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -73,27 +82,28 @@
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/button_limpar"
-                    android:layout_width="200dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="4dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/red_coral"
-                    android:text="@string/limpar" />
+                    android:text="@string/limpar"
+                    android:textColor="@android:color/white" />
 
                 <com.google.android.material.button.MaterialButton
                     android:id="@+id/button_salvar"
-                    android:layout_width="200dp"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
                     android:layout_weight="1"
                     android:backgroundTint="@color/green_emerald"
-                    android:text="@string/salvar" />
+                    android:text="@string/salvar"
+                    android:textColor="@android:color/white" />
 
             </LinearLayout>
 
         </LinearLayout>
 
     </ScrollView>
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

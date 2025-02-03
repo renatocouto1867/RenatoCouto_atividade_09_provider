@@ -12,8 +12,17 @@
 
     <fragment
         android:id="@+id/navigation_listar"
-        android:name="com.example.renatocouto_atividade_09_provider.ui.listar.ListarFragment"
+        android:name="com.example.renatocouto_atividade_09_provider.ui.listaraluno.ListarAlunosFragment"
         android:label="@string/title_listar"
         tools:layout="@layout/fragment_listar" />
+
+    <fragment
+        android:id="@+id/navigation_aprovados"
+        android:name="com.example.renatocouto_atividade_09_provider.ui.listarmedia.ListarMediasFragment"
+        android:label="@string/title_aprovados"
+        tools:layout="@layout/fragment_listar_medias" />
+
+
+
 
 </navigation>

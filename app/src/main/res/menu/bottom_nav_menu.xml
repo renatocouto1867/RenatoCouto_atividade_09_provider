@@ -12,6 +12,11 @@
         android:title="@string/title_listar" />
 
     <item
+        android:id="@+id/navigation_aprovados"
+        android:icon="@drawable/aprovados_24"
+        android:title="@string/title_aprovados" />
+
+    <item
         android:id="@+id/navigation_sair"
         android:icon="@drawable/exit_to_app_24"
         android:title="@string/title_sair" />

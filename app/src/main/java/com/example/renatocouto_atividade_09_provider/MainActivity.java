@@ -1,9 +1,7 @@
 package com.example.renatocouto_atividade_09_provider;
 
 import android.os.Bundle;
-import android.view.MenuItem;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
@@ -15,8 +13,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ActivityMainBinding binding;
     NavController navController;
+    private ActivityMainBinding binding;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
      * Usei esse metodo para captura o clique no menu sair, e depois eu retorno o navController para
      * a navegação voltar a funcionar pelo Navigation, sem o
      * return NavigationUI.onNavDestinationSelected(itemMenu, navController), o menu para de funcionar
-     * */
+     */
     private void configuraBotaoSair() {
         binding.navView.setOnItemSelectedListener(item -> {
             if (item.getItemId() == R.id.navigation_sair) {
