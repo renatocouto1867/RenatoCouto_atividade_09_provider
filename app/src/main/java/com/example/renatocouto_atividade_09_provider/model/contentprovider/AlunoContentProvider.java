@@ -30,7 +30,7 @@ public class AlunoContentProvider extends ContentProvider {
     @Override
     public Cursor query(@NonNull Uri uri, @Nullable String[] projection, @Nullable String selection,
                         @Nullable String[] selectionArgs, @Nullable String sortOrder) {
-        Cursor cursor = database.alunoDao().buscarTosdosCursor();
+        Cursor cursor = database.alunoDao().buscarTodosCursor();
         if (cursor != null) {
             cursor.setNotificationUri(getContext().getContentResolver(), uri);
         }

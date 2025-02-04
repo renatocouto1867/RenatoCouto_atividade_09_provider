@@ -21,7 +21,6 @@ public class CadastrarViewModel extends ViewModel {
 
     public CadastrarViewModel() {
         mensagemText = new MutableLiveData<>();
-
     }
 
     public void salvarAluno(Aluno aluno, Context context) {

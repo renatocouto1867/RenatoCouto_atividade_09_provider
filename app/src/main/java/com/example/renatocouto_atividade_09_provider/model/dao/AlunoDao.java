@@ -33,9 +33,12 @@ public interface AlunoDao {
     @Query("SELECT * FROM alunos WHERE id = :id")
     Aluno buscarPorId(long id);
 
+    @Query("SELECT * FROM alunos WHERE nome = :nome")
+    Aluno buscarPorNome(String nome);
+
     @Query("SELECT * FROM alunos")
     List<Aluno> buscarTodos();
 
     @Query("SELECT * FROM alunos")
-    Cursor buscarTosdosCursor();
+    Cursor buscarTodosCursor();
 }

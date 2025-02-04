@@ -102,7 +102,9 @@ public class CadastrarFragment extends Fragment {
                 cadastrarViewModel.atualizarAluno(aluno, requireActivity());
             } else cadastrarViewModel.salvarAluno(new Aluno(nome, nota1, nota2), requireActivity());
 
+            limparCampos();
             monitoraMensagem();
+
 
         } catch (NumberFormatException e) {
             Mensagens.showErro(requireView(), getString(R.string.insira_uma_nota_valida));

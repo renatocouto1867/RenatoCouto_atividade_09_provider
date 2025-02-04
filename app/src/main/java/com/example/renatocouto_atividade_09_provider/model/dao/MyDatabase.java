@@ -8,12 +8,19 @@ import androidx.room.RoomDatabase;
 
 import com.example.renatocouto_atividade_09_provider.model.entity.Aluno;
 
+/**
+ * orientação do site Android developer
+ * caso o app seja executado em um único processo, siga o padrão singleton
+ * ao instanciar um objeto AppDatabase. Cada instância RoomDatabase é bastante cara
+ * do ponto de vista computacional e raramente é necessário ter acesso a
+ * várias instâncias em um único processo.
+ * https://developer.android.com/training/data-storage/room?hl=pt-br
+ * */
+
 @Database(entities = {Aluno.class}, version = 1)
 public abstract class MyDatabase extends RoomDatabase {
 
     private static volatile MyDatabase INSTANCE;
-
-    public abstract AlunoDao alunoDao();
 
     public static MyDatabase getInstance(Context context) {
         if (INSTANCE == null) {
@@ -29,4 +36,6 @@ public abstract class MyDatabase extends RoomDatabase {
         }
         return INSTANCE;
     }
+
+    public abstract AlunoDao alunoDao();
 }
